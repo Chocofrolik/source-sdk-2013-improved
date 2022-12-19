@@ -463,7 +463,7 @@ int CFastZombie::SelectSchedule ( void )
 			CPropJeepEpisodic *pVehicle = dynamic_cast<CPropJeepEpisodic *>(pCCEnemy->GetVehicleEntity() );
 			if ( pVehicle && CanEnterVehicle( pVehicle ) )
 			{
-				m_PassengerBehaviour.Enable( pVehicle );
+				m_PassengerBehavior.Enable( pVehicle );
 			}
 		}
 	}
