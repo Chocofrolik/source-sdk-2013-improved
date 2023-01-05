@@ -691,6 +691,7 @@ void CHL2_Player::Precache( void )
 	PrecacheScriptSound( "HL2Player.TrainUse" );
 	PrecacheScriptSound( "HL2Player.Use" );
 	PrecacheScriptSound( "HL2Player.BurnPain" );
+	PrecacheModel( "models/weapons/c_arms_beta.mdl" );
 }
 
 //-----------------------------------------------------------------------------
@@ -1497,6 +1498,7 @@ void CHL2_Player::Spawn(void)
 #ifdef MAPBASE
 	if ( GetModelName() == NULL_STRING )
 		SetModel( g_szDefaultPlayerModel );
+	GetViewModel(1)->SetModel( "models/weapons/c_arms_beta.mdl" );
 #else
 	SetModel( "models/player.mdl" );
 #endif
